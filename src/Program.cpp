@@ -8,7 +8,7 @@ Program::Program(){
     // Load a font from from the resources directory
     scary.Load("fonts/Scary.ttf");
     // Text that will be moving
-    text = "Welcome Project Master!!";
+    text = "PA0";
     textSize = scary.MeasureText(text, 20.0f, 0.0f);
     
     // Load a texture from the resources directory
@@ -41,10 +41,10 @@ void Program::Update(){
 }
 
 void Program::Draw(){
-    // Set background color to gray
+    // Set background color
     ClearBackground(GRAY);
     // Draw title text in the middle of the screen
-    std::string topText = "Base Project";
+    std::string topText = "Welcome to Advanced Programming!";
     raylib::Vector2 topTextSize = MeasureTextEx(scary, topText.c_str(), 20, 0);
     scary.DrawText(topText, (GetScreenWidth()/2 - topTextSize.GetX()/2), GetScreenHeight()/2.0f, 20.0f, 0.0f, WHITE);
     // Draw the moving text

@@ -11,7 +11,7 @@ int main () {
     InitAudioDevice();
 
     // Create the window and tell the window to use vsync and work on high DPI displays
-	raylib::Window window(1280, 800, "Hello Project Master!!", FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
+	raylib::Window window(1280, 800, "PA0", FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
 
     // Create program (if we were loading images & fonts, then you need to make sure that you load() them after window creation)
 	Program program;
